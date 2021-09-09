@@ -11,10 +11,12 @@ False-website's links:
 
 2. Hosts the real website for all my co-op work term reports (WTR) designed using HTML5UP
 
-    - Header and footer contains links to Twitter (fake), Facebook (personal, private, mostly blocker, since no relevance to my career), Instagram (personal, private, barely any pictures, no relevance to my career), ***GitHub (nearly all of my past projects and school assignments)*** 
+    - Header and footer contains links to Twitter (fake), Facebook (personal, private, mostly blocked, since no relevance to my career), Instagram (personal, private, barely any pictures, no relevance to my career), ***GitHub (nearly all of my past projects and school assignments)*** 
     - Footer contains my Resume, Transcript, and Contact Info
     - Home page: abstract, intro, +Geometry Battle
     - NCR Corporation (S19-F19)
+    - University of Guelph - Hospitality Services, Information Technology (S20)
+    - Wave Financial Inc. (W21-S21)
 
 *Do not use code from this or copy any aspects without explicit permission from creator*
 
