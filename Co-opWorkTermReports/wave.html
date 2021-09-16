@@ -142,56 +142,46 @@
                 </p> -->
 
                 <!-- Work Highlights -->
-                <!-- <h2>Work Highlights</h2>
-                <ul>
-                    <p>Note: There are more details about Moneris and the PDF tasks in the Goals section below.</p>
-                    <li>
-                        Greatly exceeded expectations by remaking a form from scratch using MS Word and then using Adobe Acrobat Pro DC to
-                        make it fillable and automate/script everything as much as possible. I created this
-                        <em><a href="uog-hs/Sales and Solicitation Request Form.pdf" target="_blank">new form</a></em>
-                        by referencing the <em><a href="uog-hs/Sales and Solicitation Request Form -original.pdf" target="_blank">old PDF paper form</a></em>
-                        they provided and redoing it entirely. I even included thorough
-                        <em><a href="uog-hs/Sales and Solicitation Request Form Documentation.pdf" target="_blank">documentation</a></em>
-                        detailing how to use and modify both the original word document and PDF, including the scripting and all
-                        automated and fillable elements as well as how someone would be able to make a form like this from scratch.
-                    </li>
-                    <li>
-                        Integrated Moneris as a third-party credit card payment system after reading A LOT of their documentation and
-                        determining the best option for our system. This was done because Hospitality Services is moving away from using
-                        the MiraPay system. In this case, I carried that process out for Hospitality Services’ Online Services system
-                        where people go to manage their meal plan accounts and funds. This was the main highlight of my co-op term, and I
-                        was allowed to do it again for the Gowns system afterwards because I did it so fast with high quality (I finished
-                        it in less than 2 weeks instead of the expected 1-2 months!). Refactoring the Gowns system for Moneris was much
-                        more challenging because it was so much more complex and resulted in it being completed in just under 2 weeks as
-                        well. I was especially proud of myself for revamping the receipts for each case of the transaction, refactoring
-                        the complex Gowns code to be more manageable, and greatly improving internal and external documentation for these
-                        related projects. Moreover, I even made a
-                        <em><a href="uog-hs/Moneris Online HS and Gowns Task Documentation -censored.pdf" target="_blank">brief summary document</a></em>
-                        about the Moneris tasks and integration process, including change history, integration process, example flow and
-                        diagrams, and any other necessary information and links if someone were to work on this again or need to
-                        troubleshoot/debug an issue.
-                    </li>
-                    <li>
-                        After taking a quick peek at our Hospitality Asset Management System (HAMS) and its database after hearing my
-                        supervisor discussing with others that there was an issue/bug, I solved it immediately and surprised them since
-                        they did not know what was wrong besides the fact that they were unable to add more assets. Afterwards, at the
-                        request of my boss, I also added an administrative account for the HAMS system permitting it to be the only
-                        account with the ability to delete assets and users.
-                    </li>
-                    <li>
-                        The last task during my term was a simple and straightforward structured task where I was instructed to add a
-                        printer to VisualRATEX for the Campus Bookstore using Linux.
-                    </li>
-                    <li>
-                        For quality assurance purposes, I was supposed to user acceptance test the new GET app and was looking forward to
-                        the interesting assignment, as well as being the first student to use the new mobile/web app for ordering food
-                        from on-campus establishments (pick-up only). However, the out-sourced team developing the vast majority of the
-                        app was delayed and behind schedule due to circumstances and I never got the opportunity to before leaving.
+                <h2>Work Highlights</h2>
+                <p>
+                    &emsp;&emsp;During my time at Wave, I spent nearly all of my time on the Risk Toolbox initiative. Essentially, this
+                    project’s goal was to create an internal tool for our risk analysts so they no longer needed to use flaky, fragile,
+                    high-maintenance web scraping scripts. Not only did these scripts written by a risk analyst frequently not work and
+                    require fixing by other developers at Wave, these would also non-compliantly store sensitive personal information in
+                    plain text fields as notes in some internal tools. In turn, our Risk Toolbox solution would instead directly interact
+                    with relevant third-party APIs in order to obtain the same information, even better data in some cases, in a more secure,
+                    reliable, and maintainable fashion. Additionally, we would construct a fresh new web interface for the risk analysts as
+                    part of the Risk Toolbox.
 
-                        <br /><i>NOTE: After talking with my boss, I will be reviewing it anyways outside of this co-op term and helping
-                        them out.</i>
-                    </li>
-                </ul> -->
+                    <br />&emsp;&emsp;The first third-party API to be implemented was TransUnion, which would later be followed by Ekata,
+                    PLAID, GIACT, and LexisNexus. Leveraging these would allow risk analysts to have a much better medium to interact with
+                    and use, greatly improving their workflow efficiency and saving lots of time when identifying fraid flash and verifying
+                    credit report, name, address, and bank account information. For TransUnion alone, it would save risk analysts
+                    approximately 10+ hours each week! Another cool point of this project’s design was that it incorporated a database to act
+                    as a caching mechanism to store encrypted responses from the third party APIs for reuse in the future until we deem them
+                    outdated. This feature would save the company lots of money in the future by reducing the number of costly API calls made
+                    to the various third party APIs.
+
+                    <br />&emsp;&emsp;Of the different parts of the Risk Toolbox solution, I spent most of my time on the Central Risk
+                    backend component written in Python with typing as well as the frontend component we called Sonar (formerly called Radar)
+                    of the Central Admin internal tool where the Risk Toolbox resided. More specifically, Sonar consisted of HTML, CSS, SCSS,
+                    and React that also utilized Wave’s custom component libraries known as Bouyant, Lighthouse, and Lightship. As part of
+                    the data transport between the different applications involved, I also learned a lot about RPC and RPCX, Google Protocol
+                    Buffers (protobufs), and encryption in transit and at rest. Specifically, we used AWS Encryption Keys and Fernet to meet
+                    compliance requirements for encryption in transit and at rest, which proved quite challenging as it was an entirely new
+                    concept that I could not handle entirely alone because it required many cross-team discussions that included leaders.
+                    This was especially true if it concerned determining aspects of operations engineering and developer operations within
+                    local, test, staging, and production environments. In addition, I got to obtain more experience with GraphQL through
+                    Sonar, which would make GQL queries to a middleware application known as Reef that would communicate with the Central
+                    Risk backend to make and return data from third party API calls. It also communicated with Coastguard, the backend of
+                    Central Admin, for user verification and authentication so we could ensure only risk analysts and other employees with
+                    the proper permissions were able to view sensitive information.
+
+                    <br />&emsp;&emsp;Fortunately, I was permitted to keep copies of some things from my work term, which included various
+                    things. More importantly, I was allowed to include a copy of the video recording that shows when I did an early company
+                    demo for the Risk Toolbox project for my work term report since it did not show any code or sensitive information.
+                    **Once I process the video, I'll upload it here.
+                </p>
 
                 <!-- Goals -->
                 <h2>Goals</h2>
