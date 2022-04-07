@@ -1,92 +1,182 @@
 <!DOCTYPE html>
-<!--
-	@mvanbraeckel
-	My Website & Design HTML (with PEAR Review) for the Web Design and Development course A2 Part 1 at UoG
-
-
--->
+<!-- @mvanbraeckel | 	My Website & Design HTML (with PEAR Review) for the Web Design and Development course A2 at UoG -->
 <html lang="en">
-    <head>
-        <title>Independent Flour Mills | Canada</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="A lot more people have started baking at home over the past few years, yet not all flour is created equal. Canada produces a lot of exceptional boutique flours, often in small independent mills. Examples include Flourist, True Grain, and K2 Milling. Here we describe the various types of flour available in Canada, look at the independent mills that produce them, and explore the things that make the flours from these mills unique.">
-        <meta name="keywords" content="Independent, Flour, Mill, Canada, Boutique, Baking">
-        <meta name="author" content="Mitchell Van Braeckel">
-        <!-- https://cdn-icons-png.flaticon.com/512/158/158105.png -->
-        <link rel="icon" href="images/mill-icon.png">
-        <!-- <style>
-            @media(max-width: 900px) {
-                html {
-                    font-size: 14px !important;
-                    width: 90% !important;
-                }
-                img {
-                    max-width: 80% !important;
-                }
-            }
-            @media(max-width: 480px) {
-                html {
-                    font-size: 12px !important;
-                    width: 100% !important;
-                }
-                img {
-                    max-width: 100% !important;
-                }
-            }
+  <head>
+    <title>Independent Flour Mills | Canada</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A lot more people have started baking at home over the past few years, yet not all flour is created equal.
+      Canada produces a lot of exceptional boutique flours, often in small independent mills. Examples include Flourist, True Grain, and K2 Milling.
+      Here, we describe the various types of flour available in Canada, look at the independent mills that produce them, and explore the things that make the flours from these mills unique.">
+    <meta name="keywords" content="Independent, Flour, Mill, Canada, Boutique, Baking">
+    <meta name="author" content="Mitchell Van Braeckel">
+    <!-- https://cdn-icons-png.flaticon.com/512/158/158105.png -->
+    <link rel="icon" href="images/mill-icon.png">
+    <style>
+      @media(max-width: 900px) {
+        html {
+          font-size: 14px !important;
+          width: 90% !important;
+        }
+        img {
+          max-width: 80% !important;
+        }
+      }
+      @media(max-width: 480px) {
+        html {
+          font-size: 12px !important;
+          width: 100% !important;
+        }
+        img {
+          max-width: 100% !important;
+        }
+      }
 
-            html {
-                width: 60%;
-                margin: 0 auto;
-                font-size: 16px;
-                background-color: wheat;
-                font-family: Roboto, 'Oxygen', 'Lato', sans-serif;
-            }
+      html {
+        width: 60%;
+        margin: 0 auto;
+        font-size: 16px;
+        background-color: wheat;
+        font-family: Roboto, 'Oxygen', 'Lato', sans-serif;
+      }
+      body {
+        height: 100%;
+        min-height: 100%;
+        line-height: 1.75;
+        background:rgba(252, 252, 252, 0);
+      }
 
-            body {
-                height: 100%;
-                min-height: 100%;
-                line-height: 1.75;
-                background:rgba(252, 252, 252, 0);
-            }
+      div {
+        background:rgb(250, 250, 250);
+      }
+      img {
+        display: block;
+        max-width: 60%;
+        height: auto;
+        margin: 0 auto;
+        border-radius: 4px;
+      }
+      hr {
+        margin: 2em 0;
+      }
+      p {
+        text-indent: 1em;
+      }
+      ul {
+        list-style-type: square;
+      }
 
-            div {
-                background:rgb(250, 250, 250);
-            }
+      .round-border {
+        border-radius: 10px;
+        border: 1px solid lightgray;
+        padding: 25px;
+        margin: 25px;
+      }
+      .shadow {
+        box-shadow: 0 1.5px 3px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+      }
+    </style>
+  </head>
 
-            img {
-                display: block;
-                max-width: 60%;
-                height: auto;
-                margin: 0 auto;
-                border-radius: 4px;
-            }
+  <body><div class="round-border shadow">
+    <!-- Banner Image and Title/Intro Content, including Table of Contents -->
+    <!-- https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0c_AeVOHIH2CkZxyNgSwlMtYDXPp19TqKkA&usqp=CAU -->
+    <img src="images/bw-mill.jpg" alt="Black and white flour mill" style="width:80%;">
+    <h1 style="font-size:48px; text-align:center; text-decoration:underline;">Independent Flour Mills</h1>
+    <p>This website provides insight into some of the exceptional boutique flours from small, independent Canadian mills and what makes them unique.</p>
+    <ul>
+      <li><a href="#canadian-all-purpose-flour">Canadian All-Purpose Flour</a></li>
+      <li><a href="#mills">Small Independent Canadian Mills</a></li>
+      <ol>
+        <li><a href="#flourist">Flourist</a></li>
+        <li><a href="#k2-milling">K2 Milling</a></li>
+      </ol>
+      <li><a href="#history">History of Canadian Flour Milling</a></li>
+    </ul>
+    <p>
+      Over the past few years, many people took up baking as a hobby while being stuck at home. However, few of them know that not all flour is created equal.
+      In Canada, a lot of exceptional boutique flours are produced, and this is often from small, independent mills.
+      Let's talk about the basic flour that most people are familiar with in Canada and then discuss some of the exceptional boutique options from small, independent Canadian flour mills.
+    </p>
 
-            hr {
-                margin: 2em 0;
-            }
+    <hr>
 
-            p {
-                text-indent: 1em;
-            }
+    <div>
+      <h2 id="canadian-all-purpose-flour">Canadian All-Purpose Flour</h2>
+      <!-- https://images.smuckers.ca/images/products/29/Original-All-Purpose-Flour_desktop.png -->
+      <img src="images/original-all-purpose-flour_robin-hood.png" alt="Robin Hood brand Canadian original all-purpose flour" style="width:40%;">
+      <p>
+        Before you go any further, here's some basic primer info about Canadian flour.
+        Fun fact: The Canadian flour is one of the first and greatest Canadian success stories. Despite everything said about various different types of flour in the world,
+        Canadian all-purpose flour magically handles all the different tasks effortlessly whether it's bread, cake, or pastries that are being made.
+        As a Canadian, you probably haven't really heard of other flour types, or at least haven't used or experimented with others.
+        That's actually pretty normal because if someone says "flour" in Canada, they mean all-purpose, especially if they're a home cook or baker.
+        Give it a try, go and check your bag of flour right now - it's probably Canadian all-purpose.
+      </p>
+      <p>
+        Canadian all-purpose flour is typically composed of 73% carbohydrates, 13% protein, and 14% moisture which includes 1% fats.
+        Some may argue that the protein content is too high for this flour to work for some cake and pastry recipes, but the results always indicate the magic is true.
+        Another interesting fact about this magical all-in-one Canadian flour is that the better flours on British grocery shelves proudly advertise that they are made from Canadian wheat.
+        Whether Canadian all-purpose flour is referred to as magic or not, it's a known fact that Canadian wheat makes the finest flour in the world.
+        As such, it's desired by bakers and cooks around the globe other than just it's versatility. There's even been a "Buy French" movement in the past to try and convince French bread
+        makers in France to switch from Canadian to French flour, but bakers didn't budge.
+      </p>
+    </div>
 
-            ul {
-                list-style-type: square;
-            }
+    <hr>
 
-            .round-border {
-                border-radius: 10px;
-                border: 1px solid lightgray;
-                padding: 25px;
-                margin: 25px;
-            }
+    <h1 id="mills">Small Independent Canadian Mills</h1>
+    <div>
+      <h2 id="flourist">Flourist</h2>
+      <!-- https://cdn.shopify.com/s/files/1/0961/7326/files/flourist-email-banner_2048x2048.jpg?v=1633377711 -->
+      <img src="images/flourist-banner.jpg" alt="Three bags of Flourist-brand organic sifted fife flour on a table">
+      <p>
+        <a href="https://flourist.com/" target="_blank">Flourist</a> makes an emphasis on their special organic brand of milled flour. Not only do they refrain from the typical chemicals, bleaching, deconstruction, heating, and other
+        highly mechanized processes typical to this part of the food processing industry, they also guarantee freshness by milling flour per order and never stock flour in a warehouse.
+        Flourist's exceptional boutique flour is made using a hand-crafted Austrian stone mill that slowly and gently crushes grain at a low temperature in order to produce a beautiful,
+        aromatic, highly-nutritious, and delicious flour. The organic flour types sold by this group mainly consists of whole grain types that includes the entire grain kernel (germ, bran, and endosperm)
+        so that it maintains all the natural nutrition and flavour of the whole grain. Meanwhile, their sifted flours are made by passing the whole grain versions through fine screens to
+        remove the larger bran and germ particles so that only a beautiful, soft, rich-texture flour remains.
+      </p>
+      <p>
+        The charm of the flour from Flourist is from their commitment to providing fresh-milled, organic alternatives to the staple grocery store flours. For example, they sell whole grain marquis wheat,
+        einkorn, spelt, red fife, red spring wheat, and rye flour. Besides these, they also sell sifted marquis wheat, red spring wheat, red fife, and spelt. Flourist flours boast a natural colour and
+        unmistakable aroma that make baked goods taste much better compared to when using shelf-stable flours from the grocery store.
+      </p>
+    </div>
+    <br>
+    <div>
+      <h2 id="k2-milling">K2 Milling</h2>
+      <!-- https://k2milling.files.wordpress.com/2016/09/sparrow-light.jpg?w=629&h=421 -->
+      <img src="images/sparrow-light_k2-milling-flour.jpg" alt="Three stages of grain flour processing in piles on a K2 Milling brand SPARROW light spelt 20kg bag">
+      <p>
+        Similar to the previous organization, <a href="https://k2milling.com/" target="_blank">K2 Milling</a> produces organic flour, but they pitch it as "artisanal flour with flavour straight from the field to you."
+        So, different words are used but they have the same idea - they mill "for flavour, not colour" which results in darker flours since they use the natural crop and avoid highly mechanized processes.
+        Through this decision, K2 Milling produces untreated flour with more character and variability. They're focused on using locally sourced seeds so they can ensure that quality flour is produced from quality seeds.
+        In general, they produce a few different types of flour: all-purpose, pastry, bread, whole wheat, ultra fine, stone ground, cake, buckwheat, einkorn, oat flakes, malt barley, wheat malt, malt corn, rey malt, and wheat bran.
+      </p>
+      <p>
+        What makes K2 Milling especially special is that it also has its own (non-patented) mill and creates unique flours, even by special order if you desire.
+        To go in depth a bit more, the unique design of their "mk2MILL kold mill" claims to retain the flavour of the flour better. Personally, I find this independent Canadian mill more attractive.
+        Well, one simple reason is because K2 Milling is located in Bradford, which is relatively close to the University of Guelph. However, I especially find the unique flours they offer interesting because
+        I'm honestly just curious how good baked products would be using those flours. For instance, some unique "plant protein" flours they can mill from various different granulations use fruits and vegetables
+        like blueberry, hemp, malt barley, wheat bran, flint corn meal, country bread, cranberry, red grape, white grape, kale, broccoli, and lettuce greens. Although some of these seem a bit odd,
+        I'd love to try the fruit flours in some baked goods since it seems like it would be delicious.
+      </p>
+    </div>
 
-            .shadow {
-                box-shadow: 0 1.5px 3px 0 rgba(0,0,0,0.2);
-                transition: 0.3s;
-            }
-        </style> -->
-    </head>
+    <hr>
 
-    <body></body>
+    <h2 id="history">History of Canadian Flour Milling</h2>
+    <p>
+      In Canada, people have been milling flour since before North America was even discovered.
+      The Indigenous people hand-ground corn and other foods, such as acorns, into flour to make porridge, flat cakes, and more.
+      Eventually, the first European settlers arrived in the 16th century and possessed even greater flour milling technology.
+      If you're interested in learning about the history of flour milling in Canada and a bit about the process of milling,
+      check out <a href="https://www.thecanadianencyclopedia.ca/en/article/flour-milling" target="_blank">The Canadian Encyclopedia: Flour Milling</a> for more info.
+    </p>
+    <!-- https://www.history.com/.image/c_fit%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_620/MTc3MDI4MTYzNDg4OTgyMTU5/native-american-culture-diet-food-gettyimages-640487343.jpg -->
+    <img src="images/indigenous-people-handground-flour-porridge.jpg" alt="Indigenous couple with baby making porridge using hand-ground flour">
+  </div></body>
 </html>
