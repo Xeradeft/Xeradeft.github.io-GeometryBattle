@@ -102,7 +102,7 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/jjk-double-black-flash-nobara-yuji.jpg");
 }
 .hero-404 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/jjk-gojo-flowers.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/jjk-sakuna-yuji.jpg");
 }
 .hero, .home-hero, .curse-hero, .black-flash-hero, .hero-404 {
   /* height: 50%; */
@@ -144,10 +144,10 @@ a.hero-link:link, a.hero-link:visited, a.hero-link:hover, a.hero-link:active {
   color: #FFFFFF;
   text-decoration: none;
 }
-a.hero-link-underline:hover {
+/* a.hero-link-underline:hover {
   color: #FFFFFF;
-  text-decoration: underline !important;
-}
+  text-decoration: none !important;
+} */
 
 nav.navbar {
   width: 100%;
@@ -171,7 +171,8 @@ nav.navbar li a {
   display: inline-block;
 }
 nav.navbar li a:link, nav.navbar li a:visited {
-  background-color: #57191C;
+  /* background-color: #57191C; */
+  background-color: #371012;
   /* color: #eeeeee */
   color: rgb(255, 250, 250);
 }
