@@ -1,11 +1,15 @@
-@font-face {
+/** FONTS **/
+
+/* @font-face {
   font-family: bloodcrow;
   src: url(fonts/blood-crow/bloodcrow.ttf);
 }
 @font-face {
   font-family: hellois;
   src: url(fonts/helloisfont/HELLOISFONT.ttf);
-}
+} */
+
+/** MEDIA QUERIES **/
 
 /* default text sizes: 16px normal, 32px h1, ~18px h3 */
 @media(max-width: 1280px) {
@@ -72,6 +76,8 @@
   }
 }
 
+/** HTML & BODY **/
+
 html {
   width: 80%;
   height: 100%;
@@ -91,6 +97,8 @@ body {
   line-height: 1.75;
   background:rgba(252, 252, 252, 0);
 }
+
+/** HERO **/
 
 .home-hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/jjk-megumi-yuji-nobara.jpg");
@@ -149,6 +157,8 @@ a.hero-link:link, a.hero-link:visited, a.hero-link:hover, a.hero-link:active {
   text-decoration: none !important;
 } */
 
+/** NAV **/
+
 nav.navbar {
   width: 100%;
   overflow: auto;
@@ -187,6 +197,8 @@ nav.navbar ul li a:hover, nav.navbar ul li a:hover a:active {
   width: 100%;
 }
 
+/** STANDARD ELEMENTS **/
+
 div {
   background:rgb(250, 250, 250);
 }
@@ -207,6 +219,8 @@ ul {
   list-style-type: square;
 }
 
+/** FONT-AWESOME ICONS **/
+
 .fa {
   padding: 8px;
   text-align: center;
@@ -217,6 +231,8 @@ ul {
   opacity: 0.7;
   cursor: pointer;
 }
+
+/** CUSTOM HELPERS **/
 
 .round-border {
   border-radius: 10px;
